@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="FoodItemApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MealWiz Test FoodItem</title>
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Styles/FoodItem.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>    
+
+    <div class="container">
+      <h1>Testing a Food Item</h1>
+      <div class="navbar">
+        <div class="navbar-inner">
+          <ul class="nav">
+            
+          </ul>
+        </div>
+      </div>
+      <div ng-controller="FoodItemController">
+
+        <img ng-src="{{FoodItems[0].Image}}" alt="OOPS! :(" />
+
+        <div class="row">
+          <div class="spann11">
+            <h2>{{FoodItems[0].name}}</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="spann3">
+           <div><strong>Tag (more2cum): </strong>{{FoodItems[0].tags}}</div>
+           <div><strong>Description: </strong>{{FoodItems[0].description}}</div>
+          </div>
+          <div class="spann4">
+            <address>
+              <strong>NutritionalData</strong> <br />
+                Calories: {{FoodItems[0].NutritionalData.Calories}}            <br />
+                Calories from Fat: {{FoodItems[0].NutritionalData.CaloriesFromFat}}     <br />
+                Total Fat: {{FoodItems[0].NutritionalData.TotalFat}}            <br />
+                Saturated Fat: {{FoodItems[0].NutritionalData.SaturatedFat}}        <br />
+                Trans Fat: {{FoodItems[0].NutritionalData.TransFat}}            <br />
+                Cholesterol: {{FoodItems[0].NutritionalData.Cholesterol}}         <br />
+                Sodium: {{FoodItems[0].NutritionalData.Sodium}}              <br />
+                Total Carbohydrates: {{FoodItems[0].NutritionalData.TotalCarbohydrates}}  <br />
+                Fiber: {{FoodItems[0].NutritionalData.Fiber}}               <br />
+                Sugars: {{FoodItems[0].NutritionalData.Sugars}}              <br />
+                Proteins: {{FoodItems[0].NutritionalData.Proteins}}            <br />
+                Vitamins: {{FoodItems[0].NutritionalData.Vitamins}}            <br />
+             
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="../bootstrap/js/bootstrap.min.js"></script>
+      <script src="../angular/angular.min.js"></script>
+      <script src = "Scripts/FoodItem.js"></script>
+      <script src = "Scripts/FoodItemApp.js"></script>
+      <script src = "Scripts/Controllers/FoodItemController.js"></script>
+
+
+    </div>
+
+  </body>
+</html>
+
+
+
+
+
+<!-- file:///C:/Users/us3r/Documents/GitHub/mis5700_mw/DataEntities/html_tests/test_FoodItem.htm -->
